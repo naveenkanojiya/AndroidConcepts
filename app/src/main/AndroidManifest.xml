@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GetDatausingVolley"
+        tools:targetApi="31">
+        <activity
+            android:name=".Recyclerview"
+            android:exported="false" />
+        <activity
+            android:name=".GridView"
+            android:exported="false" />
+        <activity
+            android:name=".WebView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splashscreen"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="com.concepts.androidstudio.CardView"
+            android:exported="false" />
+        <activity
+            android:name=".coustombtn"
+            android:exported="false" />
+        <activity
+            android:name=".Imageview"
+            android:exported="false" />
+        <activity
+            android:name=".Linearlayout"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.concepts.androidstudio.MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.GetDatausingVolley" />
+        <activity
+            android:name=".constraintlayout"
+            android:exported="false" />
+        <activity
+            android:name="com.concepts.androidstudio.BActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
